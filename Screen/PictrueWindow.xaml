@@ -1,0 +1,23 @@
+﻿<Window x:Class="Screen.PictrueWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Screen"
+        mc:Ignorable="d"
+        Title="PictrueWindows" Height="300" Width="300"
+        WindowState="Maximized" WindowStyle="None" Topmost="True"
+        KeyDown="Window_KeyDown" MouseRightButtonDown="Window_MouseRightButtonDown"
+    MouseMove="Window_MouseMove" MouseUp="Window_MouseUp" MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid Name="back" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        </Grid>
+        <Grid Name="Blank" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#4C020202">
+        </Grid>
+        <Rectangle Name="selectRectangle" Visibility="Collapsed">
+            <Rectangle.Fill>
+                <ImageBrush ></ImageBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Window>
